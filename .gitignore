@@ -41,3 +41,18 @@ ENV/
 .DS_Store
 Thumbs.db
 
+# Model files (too large for GitHub)
+*.pt
+*.eqx
+*.pth
+*.ckpt
+*.safetensors
+
+# Training logs
+training_log*.txt
+*.log
+
+# Data files
+*.gz
+*.zip
+
