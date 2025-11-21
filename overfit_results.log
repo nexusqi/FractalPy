@@ -1,0 +1,44 @@
+======================================================================
+OVERFIT EXPERIMENT: Can 2.6k parameter model memorize 64 images?
+======================================================================
+
+1. Loading first batch (64 images)...
+   ✅ Loaded batch: (64, 1, 28, 28), labels: (64,)
+
+2. Initializing V1 Nano model...
+   ✅ Model parameters: 2,652
+
+3. Training on SINGLE batch for 300 epochs...
+   Goal: Loss -> 0 (perfect memorization)
+   Printing every 20 epochs
+
+----------------------------------------------------------------------
+Epoch   1/300 | Loss: 2.276088 | Acc: 0.1406 | Grad Norm: 0.132642 | Conv: 0.014886 | Time: 4.2s
+Epoch  20/300 | Loss: 2.084739 | Acc: 0.2969 | Grad Norm: 0.255188 | Conv: 0.383891 | Time: 55.9s
+Epoch  40/300 | Loss: 1.881350 | Acc: 0.4375 | Grad Norm: 0.270364 | Conv: 0.180167 | Time: 112.6s
+Epoch  60/300 | Loss: 1.742729 | Acc: 0.3906 | Grad Norm: 0.144231 | Conv: 0.282226 | Time: 215.5s
+Epoch  80/300 | Loss: 1.611490 | Acc: 0.3594 | Grad Norm: 1.236984 | Conv: 0.622579 | Time: 351.2s
+Epoch 100/300 | Loss: 1.541433 | Acc: 0.4531 | Grad Norm: 0.687620 | Conv: 1.197442 | Time: 475.9s
+Epoch 120/300 | Loss: 1.584954 | Acc: 0.3750 | Grad Norm: 0.683421 | Conv: 1.204380 | Time: 595.7s
+Epoch 140/300 | Loss: 1.494833 | Acc: 0.4375 | Grad Norm: 0.227070 | Conv: 0.578033 | Time: 714.8s
+Epoch 160/300 | Loss: 1.394799 | Acc: 0.4531 | Grad Norm: 0.123659 | Conv: 0.249254 | Time: 835.6s
+Epoch 180/300 | Loss: 1.345810 | Acc: 0.5000 | Grad Norm: 0.923295 | Conv: 0.261482 | Time: 963.9s
+Epoch 200/300 | Loss: 1.436295 | Acc: 0.4531 | Grad Norm: 0.758526 | Conv: 0.022427 | Time: 1085.1s
+Epoch 220/300 | Loss: 1.331479 | Acc: 0.4531 | Grad Norm: 0.247525 | Conv: 0.021036 | Time: 1206.2s
+Epoch 240/300 | Loss: 1.287929 | Acc: 0.4844 | Grad Norm: 0.080945 | Conv: 0.022507 | Time: 1329.6s
+Epoch 260/300 | Loss: 1.259398 | Acc: 0.5156 | Grad Norm: 0.056168 | Conv: 0.024998 | Time: 1454.3s
+Epoch 280/300 | Loss: 1.234994 | Acc: 0.5312 | Grad Norm: 0.048305 | Conv: 0.028408 | Time: 1576.4s
+Epoch 300/300 | Loss: 1.211686 | Acc: 0.5156 | Grad Norm: 0.039847 | Conv: 0.032975 | Time: 1723.9s
+----------------------------------------------------------------------
+
+4. Final Results:
+   Final Loss: 1.210530
+   Final Accuracy: 0.5156 (51.6%)
+   Final Grad Norm: 0.039294
+   Total Time: 1723.9s (28.7 minutes)
+
+======================================================================
+✅ IMPROVING: Accuracy >= 50%! Model is learning well!
+   Loss: 1.2105, Accuracy: 51.6%
+   Keep training - we're getting there!
+======================================================================

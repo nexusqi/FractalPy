@@ -1,0 +1,46 @@
+JAX devices: [CpuDevice(id=0)]
+JAX backend: cpu
+Loading model from trained_model.eqx...
+Resuming from epoch 0
+Loading MNIST dataset...
+(This may take a moment on first run - downloading data)
+Loaded 3750 training batches
+Loaded 625 test batches
+Using 100 training batches and 20 test batches for quick test
+Model parameters: 19696572
+
+Starting training...
+
+Epoch 1/2, Batch 0/100, Loss: 0.6720, Acc: 0.8125, Conv: 0.004434
+
+Epoch 1 Summary:
+  Train Loss: 0.6270
+  Train Accuracy: 0.8488
+  Convergence Delta: 0.003423
+  Test Loss: 0.5457
+  Test Accuracy: 0.8719
+  🎯 New best test accuracy: 0.8719
+
+Saving checkpoint (epoch 1)...
+  ✓ Best model saved to trained_model_best.eqx
+  ✓ Epoch checkpoint saved to checkpoints/epoch_1.eqx
+------------------------------------------------------------
+Epoch 2/2, Batch 0/100, Loss: 0.5209, Acc: 0.8750, Conv: 0.003541
+
+Epoch 2 Summary:
+  Train Loss: 0.4684
+  Train Accuracy: 0.8881
+  Convergence Delta: 0.003736
+  Test Loss: 0.4376
+  Test Accuracy: 0.9000
+  🎯 New best test accuracy: 0.9000
+
+Saving checkpoint (epoch 2)...
+  ✓ Best model saved to trained_model_best.eqx
+  ✓ Epoch checkpoint saved to checkpoints/epoch_2.eqx
+------------------------------------------------------------
+
+Final model saved to trained_model.eqx
+Best model (accuracy 0.9000) saved to trained_model_best.eqx
+
+Training complete!
